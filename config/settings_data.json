@@ -29,7 +29,8 @@
     "type_font_h6": "subheading",
     "type_size_h6": "12",
     "type_line_height_h6": "display-loose",
-    "page_width": "narrow",
+    "page_width": "wide",
+    "card_hover_effect": "lift",
     "badge_position": "top-right",
     "badge_corner_radius": 100,
     "badge_sale_color_scheme": "scheme-1",
@@ -62,6 +63,7 @@
     "variant_button_border_width": 1,
     "variant_button_radius": 14,
     "variant_button_width": "equal-width-buttons",
+    "content_for_index": [],
     "color_schemes": {
       "scheme-1": {
         "settings": {
