@@ -242,3 +242,52 @@ nav a,
     font-family: var(--font-header);
     font-weight: var(--font-weight-medium);
   }
+}
+
+/* ============================================
+   12. TAILWIND OVERRIDE FIXES
+   ============================================ */
+
+/* Preserve Horizon theme heading sizes from Tailwind reset */
+h1 {
+  font-size: var(--font-h1--size) !important;
+  line-height: var(--font-h1--line-height) !important;
+  letter-spacing: var(--font-h1--letter-spacing) !important;
+}
+
+h2 {
+  font-size: var(--font-h2--size) !important;
+  line-height: var(--font-h2--line-height) !important;
+  letter-spacing: var(--font-h2--letter-spacing) !important;
+}
+
+h3 {
+  font-size: var(--font-h3--size) !important;
+  line-height: var(--font-h3--line-height) !important;
+  letter-spacing: var(--font-h3--letter-spacing) !important;
+}
+
+h4 {
+  font-size: var(--font-h4--size) !important;
+  line-height: var(--font-h4--line-height) !important;
+  letter-spacing: var(--font-h4--letter-spacing) !important;
+}
+
+h5 {
+  font-size: var(--font-h5--size) !important;
+  line-height: var(--font-h5--line-height) !important;
+  letter-spacing: var(--font-h5--letter-spacing) !important;
+}
+
+h6 {
+  font-size: var(--font-h6--size) !important;
+  line-height: var(--font-h6--line-height) !important;
+  letter-spacing: var(--font-h6--letter-spacing) !important;
+}
+
+/* Preserve theme paragraph styles from Tailwind reset */
+p {
+  font-size: var(--font-paragraph--size) !important;
+  line-height: var(--font-paragraph--line-height) !important;
+  letter-spacing: var(--font-paragraph--letter-spacing) !important;
+}
