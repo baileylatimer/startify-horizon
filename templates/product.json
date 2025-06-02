@@ -60,6 +60,7 @@
               "type": "group",
               "name": "Header",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -129,6 +130,12 @@
                     "type_preset": "paragraph",
                     "width": "100%",
                     "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
                     "padding-block-start": 4,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -212,6 +219,7 @@
               "type": "group",
               "name": "Policies",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -250,6 +258,7 @@
                   "type": "group",
                   "name": "Shipping policy",
                   "settings": {
+                    "link": "",
                     "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -290,6 +299,7 @@
                       "settings": {
                         "icon": "truck",
                         "width": 16,
+                        "link": "",
                         "open_in_new_tab": false
                       },
                       "blocks": {}
@@ -330,6 +340,7 @@
                   "type": "group",
                   "name": "Return policy",
                   "settings": {
+                    "link": "",
                     "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -370,6 +381,7 @@
                       "settings": {
                         "icon": "return",
                         "width": 16,
+                        "link": "",
                         "open_in_new_tab": false
                       },
                       "blocks": {}
@@ -529,6 +541,7 @@
             "group_zGryyP": {
               "type": "group",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -599,6 +612,12 @@
                     "type_preset": "h6",
                     "width": "100%",
                     "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -646,7 +665,7 @@
         "max_products": 4,
         "columns": 4,
         "mobile_columns": "2",
-        "columns_gap": 12,
+        "columns_gap": 4,
         "rows_gap": 24,
         "icons_style": "arrow",
         "icons_shape": "none",
