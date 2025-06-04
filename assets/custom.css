@@ -5,6 +5,50 @@
  * Created: 2025
  */
 
+
+ :root {
+  --color-bg: #EDEAE4;
+  --color-contrast-high: #171717;
+  --color-contrast-higher: #000;
+  --font-body: 'Neue Montreal', serif;
+  --font-header: 'Neue Montreal', serif;
+  --font-button: 'Neue Montreal', serif;
+  
+  /* Border radius values */
+  --border-radius-sm: 8px;
+  --border-radius: 16px; 
+  --border-radius-lg: 20px;
+  
+  /* Spacing constants */
+  --spacing-lg: 40px;
+  --spacing-md: 20px;
+  --spacing-sm: 12px;
+}
+
+/* Color utility classes */
+.color-bg {
+  color: var(--color-bg) !important;
+}
+
+.bg {
+  background-color: var(--color-bg) !important;
+}
+
+.bg-dark {
+  background-color: var(--color-bg) !important;
+}
+
+/* =============================================
+ * 2. BASE/RESET STYLES
+ * ============================================= */
+html, 
+body {
+  background-color: var(--color-bg) !important;
+}
+
+
+
+
 /* ============================================
    1. FONT FACE DECLARATIONS
    ============================================ */
@@ -290,4 +334,148 @@ p {
   font-size: var(--font-paragraph--size) !important;
   line-height: var(--font-paragraph--line-height) !important;
   letter-spacing: var(--font-paragraph--letter-spacing) !important;
+}
+
+
+.text-indent {
+  text-indent: 2em;
+  position: relative;
+}
+
+
+
+/* =============================================
+ * 4. LAYOUT UTILITIES
+ * ============================================= */
+/* Margin utilities */
+.mx-d {
+  margin-left: var(--spacing-lg);
+  margin-right: var(--spacing-lg);
+}
+
+/* Padding utilities */
+.px-d {
+  padding-left: var(--spacing-lg) !important;
+  padding-right: var(--spacing-lg) !important;
+}
+
+.py-d {
+  padding-top: var(--spacing-lg) !important;
+  padding-bottom: var(--spacing-lg) !important;
+}
+
+/* Border radius utility */
+.br {
+  border-radius: var(--border-radius-lg) !important;
+  -webkit-border-radius: var(--border-radius-lg) !important;
+  -moz-border-radius: var(--border-radius-lg) !important;
+  -ms-border-radius: var(--border-radius-lg) !important;
+  -o-border-radius: var(--border-radius-lg) !important;
+  overflow: hidden;
+}
+
+.tw-grid {
+  display: grid;
+}
+
+/* Responsive layout adjustments */
+@media(max-width:1023px) {
+  .mx-d {
+    margin-left: var(--spacing-md);
+    margin-right: var(--spacing-md);
+  }
+  
+  .px-d {
+    padding-left: var(--spacing-sm) !important;
+    padding-right: var(--spacing-sm) !important;
+  }
+  
+  .py-d {
+    padding-top: var(--spacing-md) !important;
+    padding-bottom: var(--spacing-md) !important;
+  }
+}
+
+/* =============================================
+ * 5. COMPONENTS (BUTTONS, FORMS, ETC.)
+ * ============================================= */
+/* Button styles */
+.btn {
+  background-color: var(--color-contrast-higher);
+  padding: 10px 40px;
+  position: relative;
+  display: inline-block;
+  padding: 1.5em 3em;
+  color: var(--color-bg);
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--font-button);
+  font-size: 15px;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.btn:hover {
+  background-color: var(--color-contrast-high);
+  cursor: pointer;
+}
+
+.btn:hover::before {
+  border-color: var(--color-bg);
+}
+
+/* Inverted button style */
+.btn--invert {
+  background-color: var(--color-bg);
+  color: var(--color-contrast-higher);
+}
+
+
+.btn--invert:hover {
+  background-color: var(--color-contrast-lower) !important;
+}
+
+
+/* Form elements */
+.field__input, 
+.select__select, 
+.customer .field input, 
+.customer select {
+  border-radius: var(--border-radius);
+}
+
+.field__input {
+  background-color: var(--color-bg) !important;
+}
+
+.field::after, 
+.select::after, 
+.customer .field::after, 
+.customer select::after, 
+.localization-form__select::after {
+  box-shadow: none;
+}
+
+select::after:active {
+  box-shadow: none;
+}
+
+.field:hover.field::after, 
+.select:hover.select::after, 
+.select__select:hover.select__select::after, 
+.customer .field:hover.field::after, 
+.customer select:hover.select::after, 
+.localization-form__select:hover.localization-form__select::after {
+  box-shadow: none;
+}
+
+.field__input:focus, 
+.select__select:focus, 
+.customer .field input:focus, 
+.customer select:focus, 
+.localization-form__select:focus.localization-form__select::after {
+  box-shadow: none;
+  border-radius: var(--border-radius);
 }
